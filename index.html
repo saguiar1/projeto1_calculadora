@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.0/math.js"></script>
+    <title>Projeto 1 - Calculadora</title>
+</head>
+<body>
+    <main class="calculator">
+        <!-- Tela da Calculadora -->
+        <section id="display">
+            <!-- O atributo readonly impede que o usuário edite manualmente o campo (somente leitura) -->
+            <input type="text" id="displayContent" readonly>
+        </section>
+
+        <!-- Botões da Calculadora -->
+        <section class="buttons">
+            <!-- Primeira linha -->
+            <div class="btn-container">
+                <button class="btn" id="btn-C" onclick="calc.clearDisplay('C')"> C </button>
+                <button class="btn" onclick="calc.appendToDisplay('/')"> / </button>
+            </div>
+
+            <!-- Segunda linha -->
+            <div class="btn-container">
+                <button class="btn" onclick="calc.appendToDisplay('7')"> 7 </button>
+                <button class="btn" onclick="calc.appendToDisplay('8')"> 8 </button>
+                <button class="btn" onclick="calc.appendToDisplay('9')"> 9 </button>
+                <button class="btn" onclick="calc.appendToDisplay('*')"> * </button>
+            </div>
+
+            <!-- Terceira linha -->
+            <div class="btn-container">
+                <button class="btn" onclick="calc.appendToDisplay('4')"> 4 </button>
+                <button class="btn" onclick="calc.appendToDisplay('5')"> 5 </button>
+                <button class="btn" onclick="calc.appendToDisplay('6')"> 6 </button>
+                <button class="btn" onclick="calc.appendToDisplay('-')"> - </button>
+            </div>
+
+            <!-- Quarta linha -->
+            <div class="btn-container">
+                <button class="btn" onclick="calc.appendToDisplay('1')"> 1 </button>
+                <button class="btn" onclick="calc.appendToDisplay('2')"> 2 </button>
+                <button class="btn" onclick="calc.appendToDisplay('3')"> 3 </button>
+                <button class="btn" onclick="calc.appendToDisplay('+')"> + </button>
+            </div>
+
+            <!-- Quinta linha -->
+            <div class="btn-container">
+                <button class="btn" onclick="calc.appendToDisplay('0')"> 0 </button>
+                <button class="btn" onclick="calc.appendToDisplay('.')"> . </button>
+                <button class="btn" id="btn-equal" onclick="calc.calculate()"> = </button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

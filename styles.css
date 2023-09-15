@@ -1,0 +1,79 @@
+body{
+    font-family: sans-serif;
+    background-color: #0F1722;
+    margin: 0;
+}
+
+/* class que abrange toda a calculadora */
+.calculator{
+    background-color: #1d293a;
+    margin-top: 30px; /* Para descolar a calculadora da parte superior da tela */
+    width: 400px; /* Largura da calculadora */
+    height: 400px; /* Altura da calculadora*/
+    margin-left: auto;  /* Para colocar a calculadora no centro */
+    margin-right: auto; /* Para colocar a calculadora no centro */
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/* id que faz referencia a tela da calculadora */
+#display{
+    display: flex;
+}
+
+/* id que faz referencia ao texto e a tela da calculadora */
+#displayContent{
+    background-color: #354357;
+    color: #fff;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 258px;
+    height: 50px;
+    border: 1px solid #354357;
+    text-align: right;
+    box-sizing: border-box; /* todo conteudo que esta dentro tem que parar na borda*/
+    overflow: hidden; /* todo conteudo que esta dentro tem que parar na borda*/
+    white-space: nowrap; /* impede que o conteudo saia da caixa de texto */
+}
+
+/* class que abrange todaos os botões --> bloco padrão (referência) */
+.btn-container{
+    position: relative; /* Referência para os outros botões */
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* animação do botão, que muda a cor quando o mause passa em cima*/
+.btn:hover{
+    background-color: #6c63ff;
+}
+
+/* configuração do botão */
+.btn{
+    width: 50px;
+    height: 50px;
+    margin: 0 7.5px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #354357;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* configuração do botão C*/
+#btn-C{
+    width: 190px;
+}
+
+/* configuração do botão igual (=) */
+#btn-equal{
+    width: 120px;
+}
